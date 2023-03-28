@@ -1,0 +1,105 @@
+# Learning parameters
+dqn_param:
+  gamma: 0.999
+  batch_size: 128
+  replay_memory_size: 5000
+  min_replay_size: 264
+  epsilon_start: 0.9
+  epsilon_end: 0.05
+  epsilon_decay: 200
+  target_update_freq: 10
+
+# Time, random seed, and buffer parameters
+Algorithm:
+  iterations_for_time: 1000
+  time_resolution: 1
+  random_seed: 181
+  total_iteration_monte: 6000
+  IsFullBuffer: True
+
+# Wireless network parameters
+Network:
+  area_size: [ 1000, 1000 ]
+  number_of_uavs_per_area: 5
+  number_of_HAP_per_area: 1
+  total_users: 50
+  carrier_frequency: 28
+  bandwidth: 2200000000
+  bandwidth_ground: 56000000
+  number_of_subcarriers: 1
+  number_of_subcarriers_ground: 4
+  noise_power_ground: -174
+  noise_power_backhaul: -174
+  Nakagami_parameter_NLoS: 1
+  Nakagami_parameter_LoS_GBS: 3
+  Nakagami_parameter_LoS_UAV: 5
+  betta_1: 38
+  alpha_1: 3
+  betta_2: 70
+  alpha_2: 2
+  std_los_2: 5.2
+  hap_carrier_freq: 2.11 # GHz
+
+# Satellite parameter
+SAT_Network:
+  number_of_satellites: 22
+  sat_velocity: [ 0, 7.8*1000, 0 ]
+  Distance_between_satellites: 1819*1000
+  radius_of_orbital_plane: 6371*(1000)
+  altitude_of_satellites: 550000
+  Earth_radius: 6371000
+  elevation_angle: 0
+
+# UAV parameters
+UAV_Network:
+  altitude_minimum: 22.5
+  altitude_maximum: 121.9
+  light_speed: 299792458
+  minimum_distance_uav_uav: 10
+  minimum_velocity: 0
+  maximum_velocity: 30
+  velocity_step: 2
+  acceleration: 5
+  fixed_speed: 10
+  alpha_uav_los: 61.4
+  alpha_uav_nlos: 72
+  betta_uav_los: 2
+  betta_uav_nlos: 2.92
+  std_uav_los: 5.8
+  std_uav_nlos: 8.7
+  communication_power: 5
+
+# BS parameters
+Type:
+  Sat: 1
+  HAP: 2
+  UAV: 3
+
+Base_Station:
+  power_maximum: [ 39.23, 43, 24 ]
+  bias_states_for_actions: [ 1, 1, 1 ]
+  altitude_level_uav: 3
+  load_maximum: 1
+  load_minimum: 0.1
+  load_impact_on_user_association: 0
+  load_preferred: [ .5, .5, 0.5 ]
+  rate_impact_on_utility: 1
+  energy_impact_on_utility: 0
+  price_for_outage: 0
+  height: [ 550*1000, 20000, 100 ]
+
+# User parameter
+User:
+  mean_packet_size: 1.8
+  mean_inter_arrivals: 1
+  height: 1.5
+  maximum_speed: 1.3
+
+
+
+
+
+
+
+
+
