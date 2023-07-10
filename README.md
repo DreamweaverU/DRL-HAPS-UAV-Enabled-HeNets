@@ -1,2 +1,2 @@
 # DRL-HAPS-UAV-Enabled-HeNets
-HAPS-UAV-Enabled Heterogeneous Networks: A Deep Reinforcement Learning Approach
+The source code for our paper titled "HAPS-UAV-Enabled Heterogeneous Networks: A Deep Reinforcement Learning Approach" published by the _IEEE Open Journal of the Communications Society_.
